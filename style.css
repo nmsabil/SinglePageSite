@@ -54,4 +54,10 @@ body {
 .header_top_social {
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  .header_top {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
