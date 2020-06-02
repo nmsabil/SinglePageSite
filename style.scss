@@ -1,0 +1,60 @@
+$primaryColor:#36EA7F;
+$lightColor: #1E2127;
+$darkColor: #333333;
+$darkerColor: #212121;
+$whiteColor: #ffffff;
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: $primaryColor;
+    font-family: 'Trirong', serif;
+}
+
+.header_top {
+    background: $lightColor;
+    height: 30px;
+    &_info,
+    &_social {
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                color: $whiteColor;
+                a {
+                    color: $whiteColor;
+                    padding: 5px;
+                    font-size: 14px;
+                    text-decoration: none;
+                    &:hover {
+                        color: $primaryColor;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    &_info {
+        ul {
+            li {
+                padding-right: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+    &_social {
+        text-align: right;
+    }
+}
