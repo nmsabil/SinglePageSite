@@ -1,5 +1,5 @@
-$primaryColor:#36EA7F;
-$lightColor: #1E2127;
+$primaryColor: #36ea7f;
+$lightColor: #1e2127;
 $darkColor: #333333;
 $darkerColor: #212121;
 $whiteColor: #ffffff;
@@ -15,14 +15,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
     background-color: $primaryColor;
-    font-family: 'Trirong', serif;
+    font-family: "Trirong", serif;
 }
 
+// top header
 .header_top {
     background: $lightColor;
     height: 30px;
@@ -30,6 +31,8 @@ body {
     &_social {
         ul {
             list-style: none;
+            padding: 0;
+            margin: 0;
             li {
                 display: inline-block;
                 color: $whiteColor;
@@ -62,5 +65,111 @@ body {
 @media (max-width: 768px) {
     .header_top {
         display: none;
+    }
+}
+
+// main header nav
+header {
+    .navbar-toggler-icon {
+        display: inline !important;
+    }
+    nav {
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        .icon-bar {
+            background-color: #36ea7f;
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .container {
+            .navbar-brand {
+                color: #ddd;
+                padding: 0;
+                span {
+                    color: $primaryColor !important;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 900;
+                    font-size: 38px;
+                    padding-right: 3px;
+                }
+            }
+            .navbar-nav {
+                li {
+                    position: relative;
+                    padding-left: 20px;
+                    a {
+                        color: #ddd;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-family: "Montserrat", sans-serif;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        position: relative;
+                        &:after {
+                            position: absolute;
+                            height: 3px;
+                            width: 0%;
+                            left: 0;
+                            bottom: -10px;
+                            right: 0;
+                            /* top: 0; */
+                            margin: auto;
+                            content: "";
+                            background: $primaryColor;
+                            transition: all 0.3s linear;
+                        }
+                        &:hover:after {
+                            width: 60%;
+                        }
+                    }
+                    &.active>a:after {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        nav {
+            background-color: $darkColor;
+            .container {
+                .navbar-nav {
+                    text-align: center;
+                    li {
+                        position: relative;
+                        a {
+                            font-size: 15px;
+                            &.active {
+                                color: #36ea7f;
+                            }
+                            &:hover {
+                                color: #36ea7f;
+                            }
+                            &:hover:after {
+                                width: 0%;
+                            }
+                        }
+                        &.active>a:after {
+                            width: 0%;
+                            color: #36ea7f;
+                        }
+                        &.active>a {
+                            color: #36ea7f;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
