@@ -20,6 +20,7 @@ body {
 }
 
 .header_top {
+  position: relative;
   background: #1e2127;
   height: 30px;
 }
@@ -63,12 +64,23 @@ body {
   }
 }
 
+header .navbar {
+  border-color: #e7e7e7;
+  position: absolute;
+  top: 29px;
+  width: 100%;
+  z-index: 999;
+  border-radius: 0px;
+  border-style: none;
+  margin: 0px;
+}
+
 header .navbar-toggler-icon {
   display: inline !important;
 }
 
 header nav {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header nav .icon-bar {
@@ -108,7 +120,7 @@ header nav .container .navbar-brand span {
 
 header nav .container .navbar-nav li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 header nav .container .navbar-nav li a {
@@ -119,11 +131,12 @@ header nav .container .navbar-nav li a {
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
+  font-size: 12px;
 }
 
 header nav .container .navbar-nav li a:after {
   position: absolute;
-  height: 3px;
+  height: 5px;
   width: 0%;
   left: 0;
   bottom: -10px;
@@ -172,6 +185,141 @@ header nav .container .navbar-nav li.active > a:after {
   }
   header nav .container .navbar-nav li.active > a {
     color: #36ea7f;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navbar {
+    top: 0px;
+  }
+  header .navbar-toggler-icon {
+    margin-right: 10px !important;
+  }
+  header nav .container .navbar-brand {
+    margin-left: 5px;
+  }
+}
+
+#banner {
+  height: 100vh;
+  width: 100%;
+  background: url(img//OfficeNews_365Mac-440x268.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#banner:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+#banner .container .row .banner_table {
+  display: table;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+#banner .container .row .banner_tabel_cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#banner .container .row .banner_text h1 {
+  color: #fff;
+  margin: 0px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+#banner .container .row .banner_text p {
+  color: #fff;
+  margin: 0px;
+  padding: 0px 320px;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 10px 320px;
+}
+
+#banner .container .row .banner_text button {
+  border: 2px solid #fff;
+  padding: 13px 29px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 5px 9px;
+  background: transparent;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-radius: 3px;
+}
+
+#banner .container .row .banner_text button:hover {
+  background: #36ea7f;
+  color: #fff;
+  border-color: #36ea7f;
+}
+
+#banner .container .row .banner_text .btn_sp {
+  background: #36ea7f;
+  border-color: #36ea7f;
+}
+
+#banner .container .row .banner_text .btn_sp:hover {
+  color: #36ea7f;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.nextpage {
+  height: 100vh;
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+  #banner .container .row .banner_text p {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner .container .row .banner_text {
+    margin: 5px;
+  }
+  #banner .container .row .banner_text p {
+    font-size: 13px;
+    line-height: 17px;
+    position: relative;
+    left: -12px;
+    padding: 10px 0px;
+  }
+  #banner .container .row .banner_text h1 {
+    font-size: 21px;
+    position: relative;
+    left: -13px;
+  }
+  #banner .container .row .banner_text button {
+    border: 1px solid #fff;
+    padding: 10px 12px;
+    margin: 5px 6px;
+    background: transparent;
+    color: #fff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-size: 11px;
   }
 }
 /*# sourceMappingURL=style.css.map */
