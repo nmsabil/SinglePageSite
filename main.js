@@ -1,3 +1,4 @@
+// navbar dark on scroll
 window.onscroll = function() {
     navBarSticky();
 };
@@ -17,3 +18,6 @@ function navBarSticky() {
         navbar.style.background = "rgba(51,51,51,0.6)";
     }
 }
+
+// youtube video popup
+$(".bla-1").modalVideo();

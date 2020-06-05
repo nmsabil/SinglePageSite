@@ -139,7 +139,7 @@ header nav .container .navbar-nav li a:after {
   height: 5px;
   width: 0%;
   left: 0;
-  bottom: -10px;
+  bottom: -12px;
   right: 0;
   /* top: 0; */
   margin: auto;
@@ -321,5 +321,255 @@ header nav .container .navbar-nav li.active > a:after {
     transition: all 0.3s linear;
     font-size: 11px;
   }
+}
+
+#about_us {
+  padding: 100px 0px;
+  background: #fff;
+}
+
+#about_us .about_info {
+  padding: 0px 19px 0px 0px;
+}
+
+#about_us .about_info h1 {
+  margin: 0px;
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 900;
+  letter-spacing: 3px;
+  padding-bottom: 13px;
+}
+
+#about_us .about_info p {
+  margin: 0px;
+  color: #444;
+  font-size: 15px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+#about_us .about_info button {
+  border: 2px solid #333;
+  padding: 10px 21px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #333;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#about_us .about_info button:hover {
+  background: #36ea7f;
+  color: #222;
+  border-color: #36ea7f;
+}
+
+#about_us .about_video {
+  position: relative;
+  z-index: 1;
+}
+
+#about_us .about_video:before {
+  position: absolute;
+  height: 100%;
+  width: 99%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background-repeat: repeat;
+}
+
+#about_us .about_video a {
+  color: #fff;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+  cursor: pointer;
+  font-size: 67px;
+}
+
+@media (max-width: 577px) {
+  #about_us {
+    padding: 80px 0px;
+  }
+  #about_us .about_info {
+    padding: 5px;
+    text-align: center;
+  }
+  #about_us .about_info h1 {
+    font-size: 23px;
+  }
+  #about_us .about_info button {
+    padding: 8px 15px;
+    margin-top: 5px;
+  }
+  #about_us .about_video {
+    margin-top: 20px;
+  }
+}
+
+#service {
+  padding: 100px 0px 54px;
+  background: #f5f5f5;
+}
+
+#service .section_title h3 {
+  margin: 0px;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+#service .section_title p {
+  margin: 0px;
+  color: #444;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+#service .service_container {
+  margin-top: 30px;
+}
+
+#service .service_container .service_item {
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  padding: 13px 25px;
+}
+
+#service .service_container .service_item .fa {
+  font-size: 25px;
+  color: #666;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#service .service_container .service_item h2 {
+  margin: 0px;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 11px 0px;
+}
+
+#service .service_container .service_item .service_item p {
+  margin: 0px;
+  color: #444;
+  font-size: 15px;
+}
+
+#service .service_container .service_item:hover {
+  border-color: #36ea7f;
+  cursor: pointer;
+}
+
+#service .service_container .service_item:hover .fa {
+  color: #36ea7f;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@media (max-width: 577px) {
+  #service {
+    padding: 100px 0px 54px;
+    background: #f5f5f5;
+  }
+  #service .section_title h3 {
+    margin: 0px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+  #service .section_title p {
+    margin: 0px;
+    color: #444;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+  #service .service_container {
+    text-align: center;
+  }
+  #service .service_container .service_item {
+    border: 1px solid #36ea7f;
+  }
+  #service .service_container .service_item .fa {
+    color: #36ea7f;
+  }
+}
+
+#work_togather {
+  padding: 100px 0px 105px;
+  background: url(img/OfficeNews_365Mac-440x268.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+#work_togather:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+#work_togather .work_togather_content h2 {
+  color: #ddd;
+  margin: 0;
+  padding-bottom: 7px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#work_togather .work_togather_content p {
+  color: #ddd;
+  margin: 0;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+#work_togather .work_togather_content button {
+  border: 2px solid #36ea7f;
+  background: transparent;
+  padding: 10px 24px;
+  color: #36ea7f;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#work_togather .work_togather_content button:hover {
+  background: #36ea7f;
+  color: #222;
+}
+
+#our_team {
+  padding: 100px 0px 106px;
+  background: #fff;
 }
 /*# sourceMappingURL=style.css.map */
