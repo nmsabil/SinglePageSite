@@ -705,4 +705,71 @@ header nav .container .navbar-nav li.active > a:after {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
+.active {
+  background: #36ea7f;
+  color: #222;
+  border-color: #36ea7f;
+}
+
+#work {
+  padding: 100px 0px 104px;
+  background: #fff;
+}
+
+#work .work_container {
+  margin-top: 30px;
+}
+
+#work .portfolio-filter li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 18px;
+  border: 1px solid #e5e5e5;
+  margin: 0px 7px;
+}
+
+#work .portfolio-filter li:hover {
+  background: #36ea7f;
+  color: #222;
+  border-color: #36ea7f;
+}
+
+#work .container .work_container .galary_item_container {
+  margin-top: 30px;
+}
+
+#work .container .work_container .galary_item_container .galary_item {
+  color: red;
+}
+
+#work .container .work_container .galary_item_container .galary_item .singal-galary {
+  position: relative;
+}
+
+#work .container .work_container .galary_item_container .galary_item .singal-galary .work_hover {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#work .container .work_container .galary_item_container .galary_item .singal-galary .work_hover a {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #36ea7f;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#work .container .work_container .galary_item_container .galary_item .singal-galary:hover .work_hover {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */

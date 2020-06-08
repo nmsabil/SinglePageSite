@@ -684,3 +684,64 @@ header {
         }
     }
 }
+
+// gallery
+.active {
+    background: $primaryColor;
+    color: #222;
+    border-color: $primaryColor;
+}
+
+#work {
+    padding: 100px 0px 104px;
+    background: #fff;
+    .work_container {
+        margin-top: 30px;
+    }
+    .portfolio-filter li {
+        display: inline-block;
+        cursor: pointer;
+        padding: 5px 18px;
+        border: 1px solid #e5e5e5;
+        margin: 0px 7px;
+        &:hover {
+            background: $primaryColor;
+            color: #222;
+            border-color: $primaryColor;
+        }
+    }
+    .container {
+        .work_container {
+            .galary_item_container {
+                margin-top: 30px;
+                .galary_item {
+                    color: red;
+                    .singal-galary {
+                        position: relative;
+                        .work_hover {
+                            height: 100%;
+                            width: 100%;
+                            background: rgba(0, 0, 0, 0.6);
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                            opacity: 0;
+                            transition: all 0.3s linear;
+                            a {
+                                font-size: 28px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                color: #36ea7f;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        &:hover .work_hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

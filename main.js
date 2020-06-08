@@ -27,3 +27,27 @@ $(".count_number").counterUp({
     delay: 10,
     time: 1000,
 });
+
+// gallery
+$("#work").imagesLoaded(function() {
+    $(".galary_item").isotope({
+        itemSelector: ".singal_item",
+        layoutMode: "fitRows",
+    });
+    // Add isotope click function
+    $(".portfolio-filter li").on("click", function() {
+        $(".portfolio-filter li").removeClass("active");
+        $(this).addClass("active");
+
+        var selector = $(this).attr("data-filter");
+        $(".galary_item").isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: "linear",
+                queue: 1,
+            },
+        });
+        return false;
+    });
+});
