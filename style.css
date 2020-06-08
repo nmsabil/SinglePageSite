@@ -572,4 +572,137 @@ header nav .container .navbar-nav li.active > a:after {
   padding: 100px 0px 106px;
   background: #fff;
 }
+
+#our_team .section_title h3 {
+  margin: 0px;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+#our_team .section_title p {
+  margin: 0px;
+  color: #444;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+#our_team .team_container {
+  margin-top: 30px;
+}
+
+#our_team .team_container .team_item {
+  border: 1px solid #e5e5e5;
+  padding: 20px 10px;
+}
+
+#our_team .team_container .team_img {
+  height: 150px;
+  width: 150px;
+  border: 4px solid #e5e5e5;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#our_team .team_container .team_info {
+  margin-top: 20px;
+}
+
+#our_team .team_container .team_info h3 {
+  margin: 0px;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  padding-bottom: 3px;
+}
+
+#our_team .team_container .team_info p {
+  margin: 0px;
+  color: #555;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 600;
+  border-top: 1px solid #e5e5e5;
+  letter-spacing: 1px;
+}
+
+#our_team .team_container .team-social {
+  margin-top: 10px;
+}
+
+#our_team .team_container .team-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+#our_team .team_container .team-social ul li {
+  display: inline-block;
+}
+
+#our_team .team_container .team-social ul li a {
+  text-decoration: none;
+  color: #222;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#our_team .team_container .team-social ul li a i {
+  height: 34px;
+  width: 29px;
+  border: 1px solid #e5e5e5;
+  line-height: 34px;
+  margin: 0px 4px;
+  color: #e5e5e5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#our_team .team_container .team-social ul li a i:hover {
+  border-color: #36ea7f;
+  background: #36ea7f;
+  color: #222;
+}
+
+#counter {
+  padding: 50px 0px 55px;
+  background: url(img/OfficeNews_365Mac-440x268.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+#counter:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+#counter .count_item h1 {
+  font-family: "Merriweather", serif;
+  color: #36ea7f;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+#counter .count_item p {
+  margin: 0px;
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 /*# sourceMappingURL=style.css.map */

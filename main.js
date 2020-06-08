@@ -21,3 +21,9 @@ function navBarSticky() {
 
 // youtube video popup
 $(".bla-1").modalVideo();
+
+// Number counter up
+$(".count_number").counterUp({
+    delay: 10,
+    time: 1000,
+});
