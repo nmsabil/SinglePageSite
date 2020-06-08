@@ -706,15 +706,15 @@ header nav .container .navbar-nav li.active > a:after {
   letter-spacing: 1px;
 }
 
-.active {
-  background: #36ea7f;
-  color: #222;
-  border-color: #36ea7f;
-}
-
 #work {
   padding: 100px 0px 104px;
   background: #fff;
+}
+
+#work .active {
+  background: #36ea7f;
+  color: #222;
+  border-color: #36ea7f;
 }
 
 #work .work_container {
@@ -771,5 +771,15 @@ header nav .container .navbar-nav li.active > a:after {
 
 #work .container .work_container .galary_item_container .galary_item .singal-galary:hover .work_hover {
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  #work .portfolio-filter {
+    padding: 0 !important;
+  }
+  #work .portfolio-filter li {
+    padding: 5px 9px;
+    margin: 7px 2px 5px 7px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
