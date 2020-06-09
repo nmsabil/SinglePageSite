@@ -756,3 +756,161 @@ header {
         }
     }
 }
+
+// work with us section
+#work_with_us {
+    padding: 100px 0px 105px;
+    background: url(img/OfficeNews_365Mac-440x268.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    &:before {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: "";
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.5);
+        background-repeat: repeat;
+        z-index: -1;
+    }
+    h2 {
+        color: #ddd;
+        margin: 0px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-bottom: 6px;
+    }
+    p {
+        color: #ddd;
+        font-size: 15px;
+        margin: 0px;
+        padding-bottom: 8px;
+    }
+    .work_us_content button {
+        border: 2px solid #36ea7f;
+        background: transparent;
+        padding: 10px 24px;
+        color: #36ea7f;
+        text-transform: capitalize;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: all 0.3s linear;
+        &:hover {
+            background: #36ea7f;
+            color: #222;
+        }
+    }
+}
+
+// testmonial
+#testmonial {
+    padding: 100px 0px;
+    background: #fff;
+    .section_title {
+        h3 {
+            margin: 0px;
+            color: #222;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding-bottom: 5px;
+        }
+        p {
+            margin: 0px;
+            color: #444;
+            text-transform: capitalize;
+            font-size: 15px;
+        }
+    }
+    .testmonial_container {
+        margin-top: 30px;
+        .testmonial_item {
+            padding: 20px 0px;
+            border: 1px solid #e5e5e5;
+            position: relative;
+            .testmonial_img {
+                border-right: 1px solid #e5e5e5;
+                span {
+                    height: 100px;
+                    width: 100px;
+                    border: 4px solid #e5e5e5;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    top: -58px;
+                    left: 12px;
+                    display: block;
+                    margin: 0 auto;
+                }
+                h2 {
+                    font-family: "Sacramento", cursive;
+                    text-align: center;
+                    margin: 0px;
+                    padding-top: 6px;
+                    font-size: 23px;
+                    color: #444;
+                }
+            }
+            .testmonial_info {
+                p {
+                    margin: 0px;
+                    font-size: 15px;
+                    color: #444;
+                    letter-spacing: 1px;
+                }
+                span {
+                    margin-top: 9px;
+                    display: block;
+                    color: #36ea7f;
+                }
+            }
+        }
+        .testmonial_active {
+            .owl-dots {
+                text-align: center;
+                margin-top: 46px;
+            }
+            .owl-dot.active {
+                background: #36ea7f;
+                border-color: #36ea7f;
+            }
+            .owl-dot {
+                height: 20px;
+                width: 20px;
+                border: 1px solid #e5e5e5;
+                display: inline-block;
+                margin: 0px 4px;
+                border-radius: 50%;
+                transition: all 0.3s linear;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #testmonial .testmonial_container .testmonial_item .testmonial_img {
+        span {
+            height: 60px;
+            width: 60px;
+        }
+        h2 {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .testmonial_active {
+        text-align: center;
+    }
+    #testmonial .testmonial_container .testmonial_item .testmonial_img {
+        span {
+            height: 70px;
+            width: 70px;
+        }
+    }
+}
