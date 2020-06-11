@@ -402,7 +402,7 @@ header {
 
 @media (max-width: 577px) {
     #about_us {
-        padding: 80px 0px;
+        padding: 50px 0px;
         .about_info {
             padding: 5px;
             text-align: center;
@@ -478,7 +478,7 @@ header {
 
 @media (max-width: 577px) {
     #service {
-        padding: 100px 0px 54px;
+        padding: 50px 0px 54px;
         background: #f5f5f5;
         .section_title {
             h3 {
@@ -646,6 +646,15 @@ header {
     }
 }
 
+@media (max-width: 767px) {
+    #our_team {
+        padding: 50px 0px 50px;
+        .team_container .team_item {
+            margin-bottom: 10px;
+        }
+    }
+}
+
 // counter section
 #counter {
     padding: 50px 0px 55px;
@@ -808,6 +817,12 @@ header {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    #work {
+        padding: 50px 0px 50px;
+    }
+}
+
 // testmonial
 #testmonial {
     padding: 100px 0px;
@@ -892,13 +907,16 @@ header {
 }
 
 @media only screen and (max-width: 1000px) {
-    #testmonial .testmonial_container .testmonial_item .testmonial_img {
-        span {
-            height: 60px;
-            width: 60px;
-        }
-        h2 {
-            margin-top: 15px;
+    #testmonial {
+        padding: 50px 0px;
+        .testmonial_container .testmonial_item .testmonial_img {
+            span {
+                height: 60px;
+                width: 60px;
+            }
+            h2 {
+                margin-top: 15px;
+            }
         }
     }
 }
@@ -1064,10 +1082,167 @@ header {
 
 @media only screen and (max-width: 750px) {
     #blog {
+        padding: 70px 0px 70px;
         .blog_container {
             .blog_item {
                 margin-top: 10px;
             }
+        }
+    }
+}
+
+// price card section
+#price {
+    padding: 100px 0px 104px;
+    background: #f8f8f8;
+    .section_title {
+        h3 {
+            margin: 0px;
+            color: #222;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding-bottom: 5px;
+        }
+        p {
+            margin: 0px;
+            color: #444;
+            text-transform: capitalize;
+            font-size: 15px;
+        }
+    }
+    .price_container {
+        margin-top: 30px;
+        .price_item {
+            background: #333;
+            color: #fff;
+            transition: all 0.3 linear;
+            .packeg_name {
+                h3 {
+                    margin: 0px;
+                    color: #36ea7f;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 23px;
+                    padding: 20px 0px;
+                }
+            }
+            .packeg_amout {
+                background: #36ea7f;
+                padding: 10px 0px;
+                h5 {
+                    margin: 0px;
+                    span {
+                        font-family: "Merriweather", serif;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .packeg_feater {
+                padding: 30px 24px;
+                text-align: left;
+                ul {
+                    margin: 0px;
+                    li {
+                        padding-bottom: 11px;
+                        border-bottom: 1px dotted #36ea7f;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+            .packeg_btn {
+                padding-bottom: 25px;
+                button {
+                    color: #fff;
+                    border: 1px solid #333;
+                    padding: 10px 20px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    border-radius: 20px;
+                    transition: all 0.3s linear;
+                    background: #333;
+                    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+                    &:hover {
+                        background: #36ea7f;
+                        color: #fff;
+                        border-color: #36ea7f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    #price {
+        padding: 50px 0px 50px;
+        .price_item {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// Brand section
+#brand {
+    padding: 40px 0px 20px 0px;
+    background: #fff;
+}
+
+// news letter
+#newslater {
+    padding: 50px 0px;
+    background: url(img/OfficeNews_365Mac-440x268.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    &:before {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: "";
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.5);
+        z-index: -1;
+    }
+    .news_item {
+        h3 {
+            margin: 0px;
+            color: #ddd;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 17px;
+            position: relative;
+            top: 11px;
+        }
+        button {
+            border: 1px solid #36ea7f;
+            color: #36ea7f;
+            padding: 10px 20px;
+            background: transparent;
+            text-transform: capitalize;
+            font-weight: 600;
+            letter-spacing: 1px;
+            &:hover {
+                background: #36ea7f;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #newslater .news_item {
+        h3 {
+            margin: 29px auto 0px auto;
+            text-align: center;
+        }
+        button {
+            margin: 29px auto 0px auto;
+            display: table;
         }
     }
 }
