@@ -699,15 +699,15 @@ header {
 #work {
     padding: 100px 0px 104px;
     background: #fff;
-    .active {
-        background: $primaryColor;
-        color: #222;
-        border-color: $primaryColor;
-    }
     .work_container {
         margin-top: 30px;
     }
     .portfolio-filter li {
+        &.active {
+            background: $primaryColor;
+            color: #222;
+            border-color: $primaryColor;
+        }
         display: inline-block;
         cursor: pointer;
         padding: 5px 18px;
@@ -1477,6 +1477,19 @@ footer {
             .fllow_info {
                 margin-top: 10px;
             }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    footer .footer_logo h1 {
+        text-align: center;
+    }
+    footer .footer_social {
+        margin-top: 20px;
+        text-align: center !important;
+        ul {
+            padding-left: 0 !important;
         }
     }
 }

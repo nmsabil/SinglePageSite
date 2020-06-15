@@ -721,12 +721,6 @@ header nav .container .navbar-nav li.active > a:after {
   background: #fff;
 }
 
-#work .active {
-  background: #36ea7f;
-  color: #222;
-  border-color: #36ea7f;
-}
-
 #work .work_container {
   margin-top: 30px;
 }
@@ -737,6 +731,12 @@ header nav .container .navbar-nav li.active > a:after {
   padding: 5px 18px;
   border: 1px solid #e5e5e5;
   margin: 0px 7px;
+}
+
+#work .portfolio-filter li.active {
+  background: #36ea7f;
+  color: #222;
+  border-color: #36ea7f;
 }
 
 #work .portfolio-filter li:hover {
@@ -1562,6 +1562,19 @@ footer #scroll_top .fa {
   }
   #contact .contact_container .fllow_info {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 570px) {
+  footer .footer_logo h1 {
+    text-align: center;
+  }
+  footer .footer_social {
+    margin-top: 20px;
+    text-align: center !important;
+  }
+  footer .footer_social ul {
+    padding-left: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
