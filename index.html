@@ -23,13 +23,13 @@
     <title>OnePage</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="header_top">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xs-12">
                     <div class="header_top_info">
-                        <ul>
+                        <ul id="scroll_spy_nav">
                             <li>
                                 <a href="tel:+8801974532"><i class="fa fa-phone" style="padding-right: 5px;"></i
                     >+8801974532</a
@@ -72,7 +72,7 @@
     </div>
 
     <header class="main_nav">
-        <nav class="navbar navbar-expand-lg navbar-default" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-default" id="navbar" data-spy="affix" data-offset-top="10">
             <div class="container">
                 <a class="navbar-brand mr-auto" href="#"><span>H</span>hunter</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,33 +83,33 @@
           </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only"></span
+                    <ul class="nav navbar-nav ml-auto" id="scroll_spy_nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#banner">Home <span class="sr-only"></span
                 ></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About <span class="sr-only"></span
+                            <a class="nav-link" href="#about_us">About <span class="sr-only"></span
                 ></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services <span class="sr-only"></span
+                            <a class="nav-link" href="#service">Services <span class="sr-only"></span
                 ></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Team <span class="sr-only"></span
+                            <a class="nav-link" href="#our_team">Team <span class="sr-only"></span
                 ></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Testmonial <span class="sr-only"></span
+                            <a class="nav-link" href="#testmonial">Testmonial <span class="sr-only"></span
                 ></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog <span class="sr-only"></span
+                            <a class="nav-link" href="#blog">Blog <span class="sr-only"></span
                 ></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact <span class="sr-only"></span
+                            <a class="nav-link" href="#contact">Contact <span class="sr-only"></span
                 ></a>
                         </li>
                     </ul>
@@ -1299,8 +1299,118 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section_title text-center">
+                        <h3>contact us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="contact_form">
+                            <form>
+                                <input type="text" class="name" placeholder="Enter Name" />
+                                <input type="text" class="email" placeholder="Enter Email" />
+                                <input type="text" class="phone" placeholder="Enter Phone" />
+                                <input type="text" class="subject" placeholder="Interest Of Service" />
+                                <textarea class="message" placeholder="leve Your Message"></textarea>
+                                <button type="submit">submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="contcat_info">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i> 4819 Concord Street Charlotte, NC 28209
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i> example@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> +99 9787 867589
+                                </li>
+                                <li>
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> sat-thu : 08am-07pm
+                                </li>
+                            </ul>
+                            <div class="fllow_info">
+                                <h3>follow us on social site</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i
+                      ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i
+                      ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="footer_logo">
+                        <h1><span>H</span>hunter</h1>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="footer_copy text-center">
+                        <p>©allright reserve <span>codehunter</span></p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="footer_social text-right">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span id="scroll_top"><i class="fa fa-angle-double-up" aria-hidden="true"></i
+      ></span>
+    </footer>
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
     <!-- lightbox gallery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.js" integrity="sha256-HHxzdzMxNEM7W2AK5D76PzFUsJGEECoD7bPasDHMFS0=" crossorigin="anonymous"></script>
     <!-- waypoints -->
@@ -1315,14 +1425,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.js" integrity="sha256-eeLX2eJyJl7PzfGoniSDSEBPJvEuZ3Kv+AKPiK0il98=" crossorigin="anonymous"></script>
     <!-- Owl carousel -->
     <script src="./owl.carousel.js"></script>
+    <!-- pooper js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!-- main -->
     <script src="main.js"></script>
-
-    <!-- pooper js -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <!-- bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>
