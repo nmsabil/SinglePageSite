@@ -6,7 +6,7 @@ window.onscroll = function() {
 var navbar = document.getElementById("navbar");
 
 var sticky = navbar.offsetTop;
-
+// navbar fixed on scroll
 function navBarSticky() {
     if (window.pageYOffset >= sticky) {
         navbar.style.position = "fixed";
@@ -52,7 +52,7 @@ $("#work").imagesLoaded(function() {
     });
 });
 
-//
+// testnomial carousel
 
 $(".testmonial_active").owlCarousel({
     loop: true,
@@ -72,9 +72,9 @@ $(".testmonial_active").owlCarousel({
         },
     },
 });
-/*--------------------------
-	 brand slide active
-	---------------------------- */
+
+// brand slide active
+
 $(".brand_slide_active").owlCarousel({
     loop: true,
     margin: 20,
@@ -94,9 +94,8 @@ $(".brand_slide_active").owlCarousel({
     },
 });
 
-/*--------------------------
-	scroll to top active
-	---------------------------- */
+//scroll to top active
+
 $("#scroll_top").on("click", function() {
     $("html,body").animate({
             scrollTop: 0,
@@ -105,9 +104,8 @@ $("#scroll_top").on("click", function() {
     );
 });
 
-/*--------------------------
-	 scroll spy active
-	---------------------------- */
+// scroll spy active
+
 $("body").scrollspy({ target: "#navbar", offset: 50 });
 $("#scroll_spy_nav li a").on("click", function(event) {
     if (this.hash !== "") {
@@ -124,7 +122,22 @@ $("#scroll_spy_nav li a").on("click", function(event) {
     }
 });
 
+// add active class to nav links on scroll
 $(window).scroll(function() {
     $(".nav-item").removeClass("active");
     $(".active").parent().addClass("active");
+});
+
+// hide navbar on click outside for phones
+
+$(function() {
+    $(document).click(function(event) {
+        $(".navbar-collapse").collapse("hide");
+    });
+});
+
+// preloader animation out class
+
+$(window).on("load", function() {
+    $(".loader").addClass("out");
 });
