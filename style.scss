@@ -24,6 +24,11 @@ body {
     position: relative;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 // top header
 .header_top {
     position: relative;

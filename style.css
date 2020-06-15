@@ -20,6 +20,11 @@ body {
   position: relative;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .header_top {
   position: relative;
   background: #1e2127;
