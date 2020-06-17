@@ -292,7 +292,7 @@ header nav .container .navbar-nav li.active > a:after {
 #banner {
   height: 100vh;
   width: 100%;
-  background: url(img//OfficeNews_365Mac-440x268.png);
+  background: url(img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -309,7 +309,7 @@ header nav .container .navbar-nav li.active > a:after {
   content: "";
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -464,7 +464,7 @@ header nav .container .navbar-nav li.active > a:after {
 #about_us .about_video:before {
   position: absolute;
   height: 100%;
-  width: 99%;
+  width: 100%;
   content: "";
   top: 0;
   left: 0;
@@ -602,7 +602,7 @@ header nav .container .navbar-nav li.active > a:after {
 
 #work_togather {
   padding: 100px 0px 105px;
-  background: url(img/OfficeNews_365Mac-440x268.png);
+  background: url(img/worktogather.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -767,7 +767,7 @@ header nav .container .navbar-nav li.active > a:after {
 
 #counter {
   padding: 50px 0px 55px;
-  background: url(img/OfficeNews_365Mac-440x268.png);
+  background: url(img/counter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -883,7 +883,7 @@ header nav .container .navbar-nav li.active > a:after {
 
 #work_with_us {
   padding: 100px 0px 105px;
-  background: url(img/OfficeNews_365Mac-440x268.png);
+  background: url(img/workwithus.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1058,7 +1058,7 @@ header nav .container .navbar-nav li.active > a:after {
 #video {
   min-height: 350px;
   padding: 100px 0px;
-  background: url(img/OfficeNews_365Mac-440x268.png);
+  background: url(img/video.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1147,6 +1147,16 @@ header nav .container .navbar-nav li.active > a:after {
 
 #blog .blog_container .blog_img {
   position: relative;
+}
+
+#blog .blog_container .blog_img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(321deg, rgba(54, 234, 127, 0.3) 0%, rgba(9, 9, 121, 0.3) 35%, rgba(54, 234, 127, 0.4) 97%);
 }
 
 #blog .blog_container .blog_date {
@@ -1336,9 +1346,15 @@ header nav .container .navbar-nav li.active > a:after {
   background: #fff;
 }
 
+@media only screen and (max-width: 580px) {
+  #brand {
+    display: none;
+  }
+}
+
 #newslater {
   padding: 50px 0px;
-  background: url(img/OfficeNews_365Mac-440x268.png);
+  background: url(img/newslatter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
