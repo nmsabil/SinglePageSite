@@ -145,6 +145,7 @@ header {
         border-radius: 0px;
         border-style: none;
         margin: 0px;
+        background-color: rgba(51, 51, 51, 0.6);
     }
     .navbar-toggler-icon {
         display: inline !important;
@@ -273,7 +274,7 @@ header {
 #banner {
     height: 100vh;
     width: 100%;
-    background: url(img/hero.jpg);
+    background: url(/img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -575,7 +576,7 @@ header {
 // work togather section
 #work_togather {
     padding: 100px 0px 105px;
-    background: url(img/worktogather.jpg);
+    background: url(/img/worktogather.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -723,7 +724,7 @@ header {
 // counter section
 #counter {
     padding: 50px 0px 55px;
-    background: url(img/counter.jpg);
+    background: url(/img/counter.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -834,7 +835,7 @@ header {
 // work with us section
 #work_with_us {
     padding: 100px 0px 105px;
-    background: url(img/workwithus.jpg);
+    background: url(/img/workwithus.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1002,7 +1003,7 @@ header {
 #video {
     min-height: 350px;
     padding: 100px 0px;
-    background: url(img/video.jpg);
+    background: url(/img/video.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1271,7 +1272,7 @@ header {
 // news letter
 #newslater {
     padding: 50px 0px;
-    background: url(img/newslatter.jpg);
+    background: url(/img/newslatter.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
