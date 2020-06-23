@@ -293,7 +293,7 @@ header nav .container .navbar-nav li.active > a:after {
 #banner {
   height: 100vh;
   width: 100%;
-  background: url(./img/hero.jpg);
+  background: url(/img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -603,7 +603,7 @@ header nav .container .navbar-nav li.active > a:after {
 
 #work_togather {
   padding: 100px 0px 105px;
-  background: url(./img/worktogather.jpg);
+  background: url(/img/worktogather.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -768,7 +768,7 @@ header nav .container .navbar-nav li.active > a:after {
 
 #counter {
   padding: 50px 0px 55px;
-  background: url(./img/counter.jpg);
+  background: url(/img/counter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -884,7 +884,7 @@ header nav .container .navbar-nav li.active > a:after {
 
 #work_with_us {
   padding: 100px 0px 105px;
-  background: url(./img/workwithus.jpg);
+  background: url(/img/workwithus.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1059,7 +1059,7 @@ header nav .container .navbar-nav li.active > a:after {
 #video {
   min-height: 350px;
   padding: 100px 0px;
-  background: url(./img/video.jpg);
+  background: url(/img/video.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1355,7 +1355,7 @@ header nav .container .navbar-nav li.active > a:after {
 
 #newslater {
   padding: 50px 0px;
-  background: url(./img/newslatter.jpg);
+  background: url(/img/newslatter.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
