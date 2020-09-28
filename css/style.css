@@ -1189,6 +1189,7 @@ header nav .container .navbar-nav li.active > a:after {
 
 #blog .container .row .blog_card_content_description {
   margin: 5px 0;
+  line-height: 1.45;
 }
 
 #blog .container .row .blog_card_content_btn {
@@ -1207,6 +1208,56 @@ header nav .container .navbar-nav li.active > a:after {
 
 #blog .container .row .custom-padding {
   padding: 46px 30px 26px 30px;
+}
+
+#blog .container .row .custom-bg-img {
+  background: #0066ff;
+}
+
+#blog .container .row .custom_header {
+  width: 100% !important;
+}
+
+#blog .container .row .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+#blog .container .row .flex img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-right: 15px;
+  background-size: cover;
+}
+
+#blog .container .row .download_btn {
+  background-color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  padding: 11px 15px;
+  min-width: 212px;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+#blog .container .row .download_btn:hover {
+  -webkit-box-shadow: 1px 1px 15px black;
+          box-shadow: 1px 1px 15px black;
+}
+
+#blog .container .row .download_btn a {
+  color: black;
+  font-weight: 600;
+}
+
+#blog .container .row .download_btn a:hover {
+  color: black;
 }
 
 .read_more_button {

@@ -1137,6 +1137,7 @@ header {
           }
           &_description {
             margin: 5px 0;
+            line-height: 1.45;
           }
           &_btn {
             a:hover {
@@ -1153,6 +1154,44 @@ header {
       }
       .custom-padding {
         padding: 46px 30px 26px 30px;
+      }
+      .custom-bg-img {
+        background: #0066ff;
+      }
+      .custom_header {
+        width: 100% !important;
+      }
+      .flex {
+        display: flex;
+        margin-top: 25px;
+        img {
+          height: 100%;
+          object-fit: cover;
+          padding-right: 15px;
+          background-size: cover;
+        }
+      }
+      .download_btn {
+        background-color: #fff;
+        border-style: none;
+        border-radius: 5px;
+        padding: 11px 15px;
+        min-width: 212px;
+        cursor: pointer;
+        color: black;
+        text-align: center;
+        transition: all ease-in 0.2s;
+        &:hover {
+          box-shadow: 1px 1px 15px black;
+        }
+
+        a {
+          color: black;
+          font-weight: 600;
+          &:hover {
+            color: black;
+          }
+        }
       }
     }
   }
