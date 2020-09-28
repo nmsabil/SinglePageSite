@@ -1109,8 +1109,59 @@ header nav .container .navbar-nav li.active > a:after {
   color: #36ea7f;
 }
 
+.subscribe {
+  background-color: #36ea7f;
+  padding: 80px 0;
+  color: white;
+}
+
+.subscribe-left, .subscribe-right {
+  padding: 30px;
+}
+
+.subscribe-right p {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.subscribe-right input {
+  margin-left: 20px;
+  background: #fff;
+  border: 2px solid #fff;
+  font-size: 18px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.subscribe-right button {
+  padding: 17.5px 39px;
+  border: 1px solid white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.subscribe-left {
+  border-right: 1px solid white;
+}
+
+.subscribe-left p {
+  font-weight: 600;
+}
+
+.subscribe-left h1 {
+  font-size: 30px;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+.subscribe .width-800 {
+  width: 800px;
+  margin: 0 auto;
+}
+
 #blog .container .p-custom {
-  padding: 100px 0;
+  padding-top: 100px;
 }
 
 #blog .container .row .section_header {
@@ -1233,7 +1284,8 @@ header nav .container .navbar-nav li.active > a:after {
   background-size: cover;
 }
 
-#blog .container .row .download_btn {
+#blog .container .row .download_btn,
+#blog .container .row .subscribe button {
   background-color: #fff;
   border-style: none;
   border-radius: 5px;
@@ -1246,17 +1298,20 @@ header nav .container .navbar-nav li.active > a:after {
   transition: all ease-in 0.2s;
 }
 
-#blog .container .row .download_btn:hover {
+#blog .container .row .download_btn:hover,
+#blog .container .row .subscribe button:hover {
   -webkit-box-shadow: 1px 1px 15px black;
           box-shadow: 1px 1px 15px black;
 }
 
-#blog .container .row .download_btn a {
+#blog .container .row .download_btn a,
+#blog .container .row .subscribe button a {
   color: black;
   font-weight: 600;
 }
 
-#blog .container .row .download_btn a:hover {
+#blog .container .row .download_btn a:hover,
+#blog .container .row .subscribe button a:hover {
   color: black;
 }
 
