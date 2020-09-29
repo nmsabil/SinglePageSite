@@ -3,14 +3,6 @@ window.onscroll = function () {
   navBarSticky();
 };
 
-// progressbar
-var h = document.documentElement,
-  b = document.body,
-  st = "scrollTop",
-  sh = "scrollHeight",
-  progress = document.querySelector(".progress"),
-  scroll;
-
 let topPosition = navbar.offsetTop;
 
 // navbar fixed on scroll
@@ -22,13 +14,31 @@ function navBarSticky() {
     navbarStyle.position = "fixed";
     navbarStyle.top = "0";
     navbarStyle.background = "rgba(51,51,51,1.0)";
-    progress.style.top = "72px";
+    if (window.location.pathname === "/blogDetail.html") {
+      progress.style.top = "73px";
+    }
   } else {
     navbarStyle.position = "absolute";
     navbarStyle.top = "30px";
     navbarStyle.background = "rgba(51,51,51,0.6)";
-    progress.style.top = "103px";
+    if (window.location.pathname === "/blogDetail.html") {
+      progress.style.top = "103px";
+    }
   }
+}
+
+if (window.location.pathname === "/blogDetail.html") {
+  document.addEventListener("scroll", function () {
+    scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+    progress.style.setProperty("--scroll", scroll + "%");
+  });
+  // progressbar
+  var h = document.documentElement,
+    b = document.body,
+    st = "scrollTop",
+    sh = "scrollHeight",
+    progress = document.querySelector(".progress"),
+    scroll;
 }
 
 // youtube video popup plugin
@@ -132,10 +142,6 @@ $("#scroll_spy_nav li a").on("click", function (event) {
   }
 });
 
-document.addEventListener("scroll", function () {
-  scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-  progress.style.setProperty("--scroll", scroll + "%");
-});
 // add active class to nav links when scrolled
 $(window).scroll(function () {
   $(".nav-item").removeClass("active");
