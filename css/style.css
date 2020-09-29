@@ -1629,6 +1629,46 @@ header nav .container .navbar-nav li.active > a:after {
   font-size: 0px;
 }
 
+#general {
+  padding: 100px 0px 106px;
+}
+
+#general .general_header {
+  padding: 50px 0 0 35px;
+}
+
+#general .general_header .header_title h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+#general .general_header .header_description p {
+  margin: 20px 0 40px;
+  font-size: 20px;
+}
+
+#general .general_header .header_button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#general .general_header .header_button a i {
+  margin-left: 5px;
+}
+
+#general .second_header {
+  padding: 50px 0;
+}
+
+#general .second_header h2 {
+  font-size: 45px;
+}
+
+#general .second_header p {
+  margin: 20px 0 40px;
+  font-size: 18px;
+}
+
 #blog {
   padding: 100px 0px 106px;
   background: #fff;
