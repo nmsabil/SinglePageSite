@@ -376,6 +376,7 @@ header {
       top: 0 !important;
     }
   }
+
   #banner {
     .container {
       .row {
@@ -1056,7 +1057,7 @@ header {
 
 // subscribe
 .subscribe {
-  background-color: $primaryColor;
+  background-color: #333333;
   padding: 80px 0;
   color: white;
 
@@ -1106,6 +1107,29 @@ header {
 // blog Page
 #blog {
   .container {
+    nav {
+      ol {
+        background-color: transparent;
+        .breadcrumb-item {
+          a {
+            color: black;
+            text-decoration: none;
+            transition: 0.1s ease-in all;
+            &:hover {
+              color: $primaryColor;
+              font-weight: 800;
+            }
+            i {
+              margin-right: 5px;
+            }
+          }
+          &.active {
+            color: $primaryColor;
+            font-weight: 800;
+          }
+        }
+      }
+    }
     .p-custom {
       padding-top: 100px;
     }
@@ -1267,7 +1291,7 @@ header {
         text-align: center;
         transition: all ease-in 0.2s;
         &:hover {
-          box-shadow: 1px 1px 15px black;
+          box-shadow: 1px 1px 15px $primaryColor;
         }
 
         a {
@@ -1297,6 +1321,7 @@ header {
       .blog-top-cat {
         a {
           text-decoration: none;
+          font-weight: 1000;
         }
         p {
           text-transform: uppercase;
@@ -1313,7 +1338,8 @@ header {
     }
     .blog-author-content {
       .author {
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: 600;
         margin: 30px 0 10px;
       }
       .b-time {
@@ -1373,7 +1399,7 @@ header {
       .book_button {
         display: block;
         margin: 35px 0 0;
-        width: 195px;
+        width: 210px;
         a {
           &:hover {
             text-decoration: none;
@@ -1408,6 +1434,9 @@ header {
     padding: 20px 40px;
     margin: 50px 0 20px 0;
     display: flex;
+    .author {
+      font-size: 25px;
+    }
     .author_details {
       .author_name {
         font-size: 20px;
@@ -1475,7 +1504,7 @@ header {
   display: inline-block;
   padding: 0.6rem 1rem;
   border-radius: 10rem;
-  color: #fff;
+  color: #333333;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.15rem;
@@ -1520,7 +1549,7 @@ header {
   a {
     text-decoration: none;
     font-size: 15px;
-    color: $whiteColor;
+    color: #333333;
     font-weight: 600;
     i {
       font-size: 0px;
@@ -2071,6 +2100,9 @@ footer {
   }
 }
 @media (max-width: 990px) {
+  .read_more_button a {
+    font-size: 12px !important;
+  }
   #blog .container .row .download_btn,
   #blog .container .row .subscribe button {
     min-width: 100px;
