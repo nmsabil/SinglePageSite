@@ -1366,7 +1366,9 @@ header {
         padding: 6px 0;
       }
       .book_button {
+        display: block;
         margin: 35px 0 0;
+        width: 195px;
         a {
           &:hover {
             text-decoration: none;
