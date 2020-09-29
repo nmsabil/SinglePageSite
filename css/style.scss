@@ -1,4 +1,4 @@
-$primaryColor: #36ea7f;
+$primaryColor: #00ffef;
 $lightColor: #1e2127;
 $darkColor: #333333;
 $darkerColor: #212121;
@@ -59,7 +59,7 @@ body {
       position: absolute;
       top: -5px;
       left: -5px;
-      background-color: #36ea7f;
+      background-color: $primaryColor;
       -webkit-animation: cube-transition 1.6s 0s infinite ease-in-out;
       animation: cube-transition 1.6s 0s infinite ease-in-out;
     }
@@ -154,7 +154,7 @@ header {
   nav {
     background-color: rgba($color: #000000, $alpha: 0.5);
     .icon-bar {
-      background-color: #36ea7f;
+      background-color: $primaryColor;
       display: block;
       width: 22px;
       height: 2px;
@@ -230,10 +230,10 @@ header {
             a {
               font-size: 15px;
               &.active {
-                color: #36ea7f;
+                color: $primaryColor;
               }
               &:hover {
-                color: #36ea7f;
+                color: $primaryColor;
               }
               &:hover:after {
                 width: 0%;
@@ -241,10 +241,10 @@ header {
             }
             &.active > a:after {
               width: 0%;
-              color: #36ea7f;
+              color: $primaryColor;
             }
             &.active > a {
-              color: #36ea7f;
+              color: $primaryColor;
             }
           }
         }
@@ -433,9 +433,9 @@ header {
       color: #fff;
       transition: all 0.3s linear;
       &:hover {
-        background: #36ea7f;
+        background: $primaryColor;
         color: #222;
-        border-color: #36ea7f;
+        border-color: $primaryColor;
       }
     }
   }
@@ -532,11 +532,11 @@ header {
         font-size: 15px;
       }
       &:hover {
-        border-color: #36ea7f;
+        border-color: $primaryColor;
         cursor: pointer;
       }
       &:hover .fa {
-        color: #36ea7f;
+        color: $primaryColor;
         transform: rotate(360deg);
       }
     }
@@ -612,16 +612,16 @@ header {
       padding-bottom: 10px;
     }
     button {
-      border: 2px solid #36ea7f;
+      border: 2px solid $primaryColor;
       background: transparent;
       padding: 10px 24px;
-      color: #36ea7f;
+      color: $primaryColor;
       text-transform: capitalize;
       font-weight: 600;
       letter-spacing: 1px;
       transition: all 0.3s linear;
       &:hover {
-        background: #36ea7f;
+        background: $primaryColor;
         color: #222;
       }
     }
@@ -701,8 +701,8 @@ header {
               color: #e5e5e5;
               transition: all 0.3s linear;
               &:hover {
-                border-color: #36ea7f;
-                background: #36ea7f;
+                border-color: $primaryColor;
+                background: $primaryColor;
                 color: #222;
               }
             }
@@ -746,7 +746,7 @@ header {
   .count_item {
     h1 {
       font-family: "Merriweather", serif;
-      color: #36ea7f;
+      color: $primaryColor;
       margin: 0px;
       padding-bottom: 10px;
     }
@@ -807,7 +807,7 @@ header {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                color: #36ea7f;
+                color: $primaryColor;
                 transform: translate(-50%, -50%);
               }
             }
@@ -869,16 +869,16 @@ header {
     padding-bottom: 8px;
   }
   .work_us_content button {
-    border: 2px solid #36ea7f;
+    border: 2px solid $primaryColor;
     background: transparent;
     padding: 10px 24px;
-    color: #36ea7f;
+    color: $primaryColor;
     text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 1px;
     transition: all 0.3s linear;
     &:hover {
-      background: #36ea7f;
+      background: $primaryColor;
       color: #222;
     }
   }
@@ -947,7 +947,7 @@ header {
         span {
           margin-top: 9px;
           display: block;
-          color: #36ea7f;
+          color: $primaryColor;
         }
       }
     }
@@ -957,8 +957,8 @@ header {
         margin-top: 46px;
       }
       .owl-dot.active {
-        background: #36ea7f;
-        border-color: #36ea7f;
+        background: $primaryColor;
+        border-color: $primaryColor;
       }
       .owl-dot {
         height: 20px;
@@ -1027,7 +1027,7 @@ header {
       color: #ddd;
       margin: 0px;
       span {
-        color: #36ea7f;
+        color: $primaryColor;
       }
     }
     a {
@@ -1042,7 +1042,7 @@ header {
       top: 58px;
       transition: all 0.3s linear;
       &:hover {
-        color: #36ea7f;
+        color: $primaryColor;
       }
     }
   }
@@ -1353,7 +1353,7 @@ header {
     .blog_date {
       height: 58px;
       width: 59px;
-      background: #36ea7f;
+      background: $primaryColor;
       position: absolute;
       top: 0;
       text-align: center;
@@ -1407,7 +1407,7 @@ header {
         text-transform: capitalize;
         font-size: 15px;
         &:hover {
-          color: #36ea7f;
+          color: $primaryColor;
         }
         &:hover .fa {
           padding-left: 6px;
@@ -1456,7 +1456,7 @@ header {
       .packeg_name {
         h3 {
           margin: 0px;
-          color: #36ea7f;
+          color: $primaryColor;
           text-transform: uppercase;
           font-weight: 600;
           font-size: 23px;
@@ -1464,7 +1464,7 @@ header {
         }
       }
       .packeg_amout {
-        background: #36ea7f;
+        background: $primaryColor;
         padding: 10px 0px;
         h5 {
           margin: 0px;
@@ -1481,7 +1481,7 @@ header {
           margin: 0px;
           li {
             padding-bottom: 11px;
-            border-bottom: 1px dotted #36ea7f;
+            border-bottom: 1px dotted $primaryColor;
             margin-bottom: 6px;
           }
         }
@@ -1500,9 +1500,9 @@ header {
           background: #333;
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
           &:hover {
-            background: #36ea7f;
+            background: $primaryColor;
             color: #fff;
-            border-color: #36ea7f;
+            border-color: $primaryColor;
           }
         }
       }
@@ -1562,15 +1562,15 @@ header {
       top: 11px;
     }
     button {
-      border: 1px solid #36ea7f;
-      color: #36ea7f;
+      border: 1px solid $primaryColor;
+      color: $primaryColor;
       padding: 10px 20px;
       background: transparent;
       text-transform: capitalize;
       font-weight: 600;
       letter-spacing: 1px;
       &:hover {
-        background: #36ea7f;
+        background: $primaryColor;
         color: #fff;
       }
     }
@@ -1651,8 +1651,8 @@ header {
         border: 1px solid #e5e5e5;
       }
       button {
-        background: #36ea7f;
-        border: 1px solid #36ea7f;
+        background: $primaryColor;
+        border: 1px solid $primaryColor;
         color: #fff;
         padding: 10px 20px;
         margin: 0 auto;
@@ -1662,8 +1662,8 @@ header {
         transition: all 0.3s linear;
         &:hover {
           background: transparent;
-          color: #36ea7f;
-          border-color: #36ea7f;
+          color: $primaryColor;
+          border-color: $primaryColor;
         }
       }
     }
@@ -1678,7 +1678,7 @@ header {
           margin-bottom: 6px;
           color: #444;
           .fa {
-            color: #36ea7f;
+            color: $primaryColor;
             font-size: 17px;
             padding-right: 10px;
             position: relative;
@@ -1715,8 +1715,8 @@ header {
                 transition: all 0.3s linear;
                 padding-right: 0;
                 &:hover {
-                  background: #36ea7f;
-                  border-color: #36ea7f;
+                  background: $primaryColor;
+                  border-color: $primaryColor;
                   color: #fff;
                 }
               }
@@ -1741,7 +1741,7 @@ footer {
       color: #e5e5e5;
       font-size: 20px;
       span {
-        color: #36ea7f;
+        color: $primaryColor;
         font-size: 36px;
         font-weight: 900;
         padding-right: 3px;
@@ -1757,7 +1757,7 @@ footer {
       text-transform: capitalize;
       font-size: 16px;
       span {
-        color: #36ea7f;
+        color: $primaryColor;
       }
     }
   }
@@ -1780,7 +1780,7 @@ footer {
             margin: 0px 4px;
             transition: all 0.3s linear;
             &:hover {
-              color: #36ea7f;
+              color: $primaryColor;
             }
           }
         }
@@ -1794,7 +1794,7 @@ footer {
     background: #333;
     top: -24px;
     right: 11px;
-    color: #36ea7f;
+    color: $primaryColor;
     text-align: center;
     line-height: 50px;
     font-size: 29px;
