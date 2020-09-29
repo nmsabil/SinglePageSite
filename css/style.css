@@ -1410,6 +1410,126 @@ header nav .container .navbar-nav li.active > a:after {
   font-weight: 600;
 }
 
+#blog .author_img img {
+  border: 3px solid #00ffef;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: table;
+  margin: 0 15px 0 0;
+}
+
+#blog .book-content {
+  padding: 0 !important;
+  background: url(../img/OfficeNews_365Mac-440x268.png) no-repeat;
+  background-size: cover;
+  height: 300px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#blog .book-content .overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+#blog .book-content .book_session {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+#blog .book-content .book_title h1 {
+  font-size: 2rem;
+}
+
+#blog .book-content .book_title span {
+  padding: 6px 0;
+}
+
+#blog .book-content .book_title .book_button {
+  margin: 35px 0 0;
+}
+
+#blog .book-content .book_title .book_button a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#blog .related-content {
+  padding: 0 !important;
+}
+
+#blog .related-content h3 {
+  font-size: 24px;
+}
+
+#blog .related-content .blog-bullet-list {
+  padding: 0 0 50px 0;
+  margin-left: 22px;
+}
+
+#blog .related-content .blog-bullet-list li {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+#blog .related-content .blog-bullet-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+#blog .author-content {
+  border: 1px solid #e6e6e6;
+  padding: 20px 40px;
+  margin: 50px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#blog .author-content .author_details .author_name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#blog .author-content .author_details .author_position {
+  color: #999;
+  font-weight: 600;
+}
+
+#blog .author-content .author_details .author_linkedin {
+  margin-top: 10px;
+  background: #0e76a8;
+  border-radius: 3px;
+}
+
+#blog .author-content .author_details .author_linkedin a {
+  color: white;
+}
+
+#blog .author-content .author_details .fa {
+  text-align: center;
+  width: 1.25em;
+  padding-right: 3px;
+}
+
+.progress {
+  background: -webkit-gradient(linear, left top, right top, from(#00ffef), color-stop(0, transparent));
+  background: linear-gradient(to right, #00ffef var(--scroll), transparent 0);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  top: 102px;
+  height: 5px !important;
+  z-index: 1;
+}
+
 .news-card {
   padding: 20px 0 0;
   display: -webkit-box;
@@ -2065,14 +2185,14 @@ footer #scroll_top .fa {
 }
 
 @media (max-width: 760px) {
+  .progress {
+    top: 88px !important;
+  }
   #blog .container .row .custom-padding {
     padding: 10px;
   }
   .blog_card_content_title h4 {
     font-size: 20px;
-  }
-  #blog {
-    margin-top: 30px;
   }
   #blog .container .row .section_title_page a h1,
   #blog .container .row .section_content_title h1 {
