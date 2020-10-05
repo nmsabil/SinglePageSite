@@ -1,4 +1,4 @@
-$primaryColor: green;
+$primaryColor: #00ffef;
 $lightColor: #1e2127;
 $darkColor: #333333;
 $darkerColor: #212121;
@@ -183,10 +183,11 @@ header {
       .navbar-nav {
         .nav-item {
           .dropdown-wrapper {
+            opacity: 0;
+            pointer-events: auto;
+            visibility: hidden;
             top: 72.5px;
             position: absolute;
-            background-color: white;
-            height: 500px;
             left: 0;
             width: 100%;
             z-index: 9999;
@@ -211,7 +212,7 @@ header {
                       justify-content: center;
                       width: 50px;
                       height: 50px;
-                      background: lighten($primaryColor, 72%);
+                      background: lighten($primaryColor, 45%);
                       padding: 10px;
                       border-radius: 50%;
                       color: $primaryColor;
@@ -284,7 +285,7 @@ header {
             }
           }
           .e-book-wrapper {
-            background: lighten($primaryColor, 72%);
+            background: lighten($primaryColor, 45%);
             padding: 0 50px;
 
             .flex_wrapper {
@@ -312,8 +313,10 @@ header {
                   padding: 20px 0;
                 }
                 .read_more_button {
-                  width: 100%;
+                  margin-top: 30px;
+                  width: 90%;
                   text-align: center;
+
                   &:hover a {
                     color: white;
                   }
@@ -328,6 +331,22 @@ header {
         }
         li {
           padding-left: 15px;
+          &:hover {
+            .dropdown-wrapper {
+              opacity: 1;
+              visibility: visible;
+            }
+
+            @media (max-width: 999px) {
+              &:hover {
+                .dropdown-wrapper {
+                  opacity: 0;
+                  visibility: hidden;
+                }
+              }
+            }
+          }
+
           .nav-link {
             color: #ddd;
             text-transform: uppercase;
